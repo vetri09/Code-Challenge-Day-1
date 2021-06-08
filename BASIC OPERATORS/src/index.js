@@ -7,10 +7,19 @@
 
 //write a function to return the value based on operator.
 function basicOp(operation,value1,value2){
-
-
-
-  return null;
+  let result = 0;
+  if(operation=="+"){
+    result = value1 + value2;
+  }else if(operation=="-"){
+    result = value1 - value2;
+  }else if(operation=="/"){
+    result = value1 / value2;
+  }else if(operation=="*"){
+    result = value1 * value2;
+  }else{
+    result = "Invalid Operator";
+  }
+  return result;
 }
 
 //Run SpecRunner.html to check the Test Case

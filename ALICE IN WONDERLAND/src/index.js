@@ -12,8 +12,13 @@
 
 //Write a function to return the route to her home
 function find_Route(number){
-    
-    return null;
+    let total = 0;
+    let word = number.toString();
+    for(let i=0; i<word.length; i++)
+    {
+        total += parseInt(word[i]);
+    }
+    return total;
 }
 
 //Run SpecRunner.html to check the Test Case.
